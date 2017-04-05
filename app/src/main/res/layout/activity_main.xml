@@ -1,11 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.kadol.bkashlog.MainActivity">
 
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/first_two_button_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/send_money"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/send_money"
+                android:layout_weight="1"
+                android:background="#F44336"
+                />
+
+            <Button
+                android:id="@+id/received_money"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/received_money"
+                android:layout_weight="1"
+                android:background="#9C27B0"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/last_two_button_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/total_money"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/total_money"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                />
+
+            <Button
+                android:id="@+id/remaining_transactions"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/remaining_transactions"
+                android:layout_weight="1"
+                android:background="#FF5722"
+                />
+
+        </LinearLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_pager_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
